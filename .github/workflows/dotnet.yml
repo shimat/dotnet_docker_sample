@@ -18,7 +18,12 @@ jobs:
     - name: Build
       run: dotnet build
 
+    - name: Run
+      run: dotnet run
+      
     - run: |
         ls
         echo "---"
         ls bin/
+        echo "---"
+        ls bin/Debug/
