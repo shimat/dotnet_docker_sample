@@ -5,5 +5,12 @@ Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
 Console.WriteLine("Hello, World!");
 
-var narrowDigits = Strings.StrConv("１２３", VbStrConv.Narrow);
-Console.WriteLine(narrowDigits);
+try
+{
+    var narrowDigits = Strings.StrConv("１２３－４５６", VbStrConv.Narrow);
+    Console.WriteLine(narrowDigits);
+}
+catch (Exception)
+{
+    Console.WriteLine(ex);
+}
