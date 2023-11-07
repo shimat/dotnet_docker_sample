@@ -7,7 +7,7 @@ Console.WriteLine("Hello, World!");
 
 try
 {
-    var narrowDigits = Strings.StrConv("１２３－４５６", VbStrConv.Narrow);
+    var narrowDigits = Strings.StrConv("１２３－４５６", VbStrConv.Narrow, 0x0411);
     Console.WriteLine(narrowDigits);
 }
 catch (Exception ex)
