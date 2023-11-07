@@ -10,7 +10,7 @@ try
     var narrowDigits = Strings.StrConv("１２３－４５６", VbStrConv.Narrow);
     Console.WriteLine(narrowDigits);
 }
-catch (Exception)
+catch (Exception ex)
 {
     Console.WriteLine(ex);
 }
