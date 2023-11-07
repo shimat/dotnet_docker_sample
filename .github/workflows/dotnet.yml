@@ -27,3 +27,5 @@ jobs:
         ls bin/
         echo "---"
         ls bin/Debug/
+        echo "---"
+        ls bin/Debug/net7.0/
